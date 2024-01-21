@@ -7,10 +7,10 @@ def rename(directory_path, new_name):
             raise FileNotFoundError(f"Directory not found")
 
         for filename in os.listdir(directory_path):
-            # Split the filename and extension
+            
             name, extension = os.path.splitext(filename)
 
-            # Generate the new filename with the specified prefix and original extension
+           
             new_filename = f"{new_name}_{count}{extension}"
 
             old_filepath = os.path.join(directory_path, filename)
@@ -25,8 +25,8 @@ def rename(directory_path, new_name):
         print(f"Error occurred: {str(e)}")
 
 def main():
-    directory = r"C:\imageclassifierdataset\Bricks"
-    name = "Brick"
+    directory = r"example/path" # Enter YOur path
+    name = "example_name" #Enter your name
     rename(directory, name)
 
 if __name__ == '__main__':
