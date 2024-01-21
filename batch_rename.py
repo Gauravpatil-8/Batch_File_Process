@@ -24,10 +24,29 @@ def rename(directory_path, new_name):
     except Exception as e:
         print(f"Error occurred: {str(e)}")
 
+def count_files(directory_path):
+    try:
+           
+            if not os.path.exists(directory_path):
+                raise FileNotFoundError(f"Directory not found: {directory_path}")
+
+            file_count = 0
+
+          
+            for dirpath, dirnames, filenames in os.walk(directory_path):
+              
+                file_count += len(filenames)
+
+            print(f"Number of files (including subdirectories) in {directory_path}: {file_count}")
+
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+
+
 def main():
-    directory = r"example/path" # Enter YOur path
-    name = "example_name" #Enter your name
-    rename(directory, name)
+    directory = r"C:\imageclassifierdataset" # Enter YOur path
+    name = "wood" #Enter your name
+    count_files(directory)
 
 if __name__ == '__main__':
     main()
