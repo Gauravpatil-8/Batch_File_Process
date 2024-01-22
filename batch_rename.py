@@ -42,11 +42,23 @@ def count_files(directory_path):
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 
+def batch_remove(directory_path):
+    data_directory=directory_path
+    image_extensions=["jpg","jpeg","png","bmp"]
+    for image_class in os.listdir(directory_path):
+        for image in os.listdir(os.path.join(data_directory,image_class)):
+            image_path=os.path.join(data_directory,image_class,image)
+            extension=image_path.split('.')[-1]
+            if extension not in image_extensions:
+                os.remove(image_path)
+
 
 def main():
     directory = r"C:\imageclassifierdataset" # Enter YOur path
-    name = "wood" #Enter your name
+    name = "Wood" #Enter your name
+    # rename(directory,name)
     count_files(directory)
+    # batch_remove(directory)
 
 if __name__ == '__main__':
     main()
