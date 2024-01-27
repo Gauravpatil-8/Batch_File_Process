@@ -1,5 +1,5 @@
 # Batch_File_Rename
-Made for renameing local files <br>
+
 ### Made for batch processing image file while creating dataset
 <br>
 This Script renames all files based on their count.<br>
