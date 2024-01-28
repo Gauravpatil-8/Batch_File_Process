@@ -1,17 +1,23 @@
-# Batch_File_Rename
+# Directory Utility
 
-### Made for batch processing image file while creating dataset
-<br>
-This Script renames all files based on their count.<br>
-Examples:<br>
-1.Brick_1.jpg<br>
-2.Brick_2.jpg<br>
-3.Brick_3.jpg<br>
-4.Brick_4.jpg<br>
-.....<br>
-## Batch_File_Count
-<br>
-# Counts the number of files present in the directory<br><br>
+Welcome to the **Directory Utility** GitHub repository! This collection of file utilities is designed to simplify your file management tasks and enhance your workflow for image dataset creation.
 
-## Batch_File_Remove<br>
-Removes files with certain extensions
+## Batch File Rename
+
+Effortlessly process image files and create datasets with ease. This script intelligently renames all files based on their count, making your dataset organized and easy to navigate.
+
+### Usage Examples:
+1. Brick_1.jpg
+2. Brick_2.jpg
+3. Brick_3.jpg
+4. Brick_4.jpg
+   ...
+
+## Batch File Remove
+
+Swiftly remove files with specific extensions using the Batch File Remove utility. Keep your directories clean and clutter-free with just a few simple commands.
+
+## Batch File Count
+The Batch File Count tool provides a quick and accurate count, allowing you to stay informed about your file structure.
+
+Feel free to contribute, report issues, or suggest improvements. Let's make file management a breeze together! 🚀
