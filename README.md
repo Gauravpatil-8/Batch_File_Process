@@ -8,10 +8,10 @@ Examples:<br>
 2.Brick_2.jpg<br>
 3.Brick_3.jpg<br>
 4.Brick_4.jpg<br>
-.....
+.....<br>
 ## Batch_File_Count
 <br>
-#Counts the number of files present in the directory
+# Counts the number of files present in the directory<br><br>
 
-##Batch_File_Remove<br>
+## Batch_File_Remove<br>
 Removes files with certain extensions
